@@ -1,4 +1,5 @@
 import '../assets/styles/globals.css';
+import Navbar from '@/components/Navbar';
 
 import { Inconsolata } from 'next/font/google';
 
@@ -17,6 +18,7 @@ const MainLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={inconsolata.className}>
+        <Navbar />
         <main>{children}</main>
       </body>
     </html>
